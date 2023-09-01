@@ -4,7 +4,7 @@ async function handleEvent(event) {
   let hair_color = body["hair-color"] + " hair";
   let eye_color = body["eye-color"] + " eyes";
   let area = body["area"];
-  let prompt = hair_color + "," + eye_color + "," + area + ",portrait photo of a pretty young lady, rich skin texture, ID photo, front view, chest up, medium shot, clear background, 8k, rich details, real, high resolution, extremely high quality, detailed background, excellent details and textures, highly detailed, ultra-detailed photograph 4k, high resolution, detailed skin, detailed eyes, 8k UHD, high quality";
+  let prompt = hair_color + "," + eye_color + "," + area + ",portrait photo of a pretty young lady, rich skin texture, ID photo, front view, chest up, medium shot, clear background, 8k, rich details, real, high resolution, extremely high quality, detailed background, excellent details and textures, highly detailed, high resolution, detailed skin, detailed eyes, 8k UHD, high quality";
   let n_prompt = "worst quality, low quality, watermark, 3d, midriff, nipples, canvas frame, cartoon, 3d, disfigured, bad art, deformed, extra limbs, weird colors, blurry, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, ugly, blurry, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, Photoshop, video game, tiling, cross-eye, body out of frame, 3d render";
   // call AI
   let result = await AI.txt2img(prompt, n_prompt);
